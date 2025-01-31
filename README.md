@@ -1,38 +1,58 @@
-# sv
+# Frontend Mentor - Rock, Paper, Scissors solution
+[Frontendmentor profile](https://www.frontendmentor.io/profile/notgabie)
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+This is a solution to the [Rock, Paper, Scissors challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH).
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+**Will be filled in with more content as progress is made**
 
-```bash
-# create a new project in the current directory
-npx sv create
+## Table of contents
 
-# create a new project in my-app
-npx sv create my-app
-```
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
 
-## Developing
+## Overview
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### The challenge
 
-```bash
-npm run dev
+Users should be able to:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+- View the optimal layout for the game depending on their device's screen size
+- Play Rock, Paper, Scissors against the computer
+- Maintain the state of the score after refreshing the browser _(optional)_
+- **Bonus**: Play Rock, Paper, Scissors, Lizard, Spock against the computer _(optional)_
 
-## Building
+### Screenshot
 
-To create a production version of your app:
+![](./screenshot.jpg)
 
-```bash
-npm run build
-```
 
-You can preview the production build with `npm run preview`.
+### Links
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+
+## My process
+
+### Built with
+
+- Sveltekit (Svelte 5)
+- Typescript
+- Tailwindcss (Tailwind 4)
+
+### What I learned
+
+
+### Continued development
+
+
+### Useful resources
+
+
