@@ -1,1 +1,10 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+html,
+body {
+    @apply antialiased flex flex-col h-full w-full;
+}
+
+button {
+    @apply cursor-pointer;
+}
