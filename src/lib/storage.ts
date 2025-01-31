@@ -1,6 +1,6 @@
 import { browser } from "$app/environment";
 
-export function saveGameState(state: { playerScore: number; computerScore: number }) {
+export function saveGameState(state: { playerScore: number }) {
 	localStorage.setItem('gameState', JSON.stringify(state));
 }
 

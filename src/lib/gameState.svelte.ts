@@ -1,4 +1,4 @@
-import { loadGameState } from "./storage";
+import { loadGameState, saveGameState } from "./storage";
 
 type GameState = {
 	playerScore: number;
@@ -6,8 +6,10 @@ type GameState = {
 
 export const gameState = $state<GameState>(loadGameState());
 
-export function updateScore(result: string) {
-	if (result === 'player') {
-		gameState.playerScore += 1;
-	} 
-}
+    export function updateScore(result: 'player' | 'computer' | 'tie') {
+			if (result === 'player') {
+				gameState.playerScore += 1;
+			}
+			saveGameState(gameState);
+		}
+
