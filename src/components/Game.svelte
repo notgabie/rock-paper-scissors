@@ -54,9 +54,9 @@
                     ? "It's a tie!"
                     : `You ${result === 'player' ? 'won' : 'lost'}!`}
             </p>
-                    <button onclick={resetGame}>Play Again</button>
+                    
         {/if}
+        <button onclick={resetGame}>Play Again</button>
     {/if}
-
     <p>Your score: {gameState.playerScore}</p>
 </div>
