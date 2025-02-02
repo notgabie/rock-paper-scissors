@@ -6,7 +6,10 @@
 	type buttonProps = {
 		variant: 'rock' | 'paper' | 'scissors' | 'lizard' | 'spock';
 		children: Snippet;
+		onClick?: (e: MouseEvent) => void,
+		onKeyDown?: (e: KeyboardEvent) => void,
 		className: string;
+		id: string;
 	}
 
 	type buttonEvents = {
@@ -14,7 +17,7 @@
 		keydown: KeyboardEvent;
 	}
 
-	const buttonVariants = cva('inline-flex items-center justify-center rounded-full p-3 bg-gradient-to-b cursor-pointer inset-shadow-[0_4px_0px_rgba(0,0,40,0.2)] rotate-180 transition-all hover:inset-shadow-[0_2px_0px_rgba(0,0,40,0.2)] hover:translate-y-[2px]', {
+	const buttonVariants = cva('inline-flex items-center justify-center rounded-full p-4 bg-gradient-to-b cursor-pointer inset-shadow-[0_6px_0px_rgba(0,0,40,0.2)] rotate-180 transition-all hover:inset-shadow-[0_3px_0px_rgba(0,0,40,0.2)] hover:translate-y-[3px]', {
 		variants: {
 			variant: {
 				rock: 'from-rock-dark to-rock-light',
@@ -34,11 +37,12 @@
 		children,
 		class: className = ''
 	} = $props<{
-		variant?: 'rock' | 'paper' | 'scissors' | 'lizard' | 'spock',
-		onClick?: (e: MouseEvent) => void,
-		onKeyDown?: (e: KeyboardEvent) => void,
-		children: Snippet,
-		class?: string
+		variant?: buttonProps['variant'],
+		onClick?: buttonProps['onClick'],
+		onKeyDown?: buttonProps['onKeyDown'],
+		children: buttonProps['children'],
+		class?: buttonProps['className'],
+		id: buttonProps['id']
 	}>();
 
 	export { className as class };
@@ -49,7 +53,7 @@ class={cn(buttonVariants({ variant }), className )}
 onclick={onClick}
 onkeydown={onClick}
 >
-<div class="bg-white w-16 h-16 rounded-full flex items-center justify-center inset-shadow-[0_4px_0px_rgba(0,0,90,0.20)] rotate-180 transition-all hover:inset-shadow-[0_3px_0px_rgba(0,0,90,0.20)] text-black">
+<div class="bg-white w-25 h-25 rounded-full flex items-center justify-center inset-shadow-[0_5px_0px_rgba(0,0,90,0.20)] rotate-180 transition-all hover:inset-shadow-[0_3px_0px_rgba(0,0,90,0.20)] text-black">
 {@render children()}
 </div>
 	
