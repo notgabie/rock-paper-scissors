@@ -54,5 +54,5 @@ Users should be able to:
 
 
 ### Useful resources
-
+- [SVG to CSS converter for the game background](https://bloggerpilot.com/en/tools/svg-to-css/)
 

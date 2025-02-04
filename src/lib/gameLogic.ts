@@ -1,5 +1,5 @@
 export type Move = 'rock' | 'paper' | 'scissors' | 'lizard' | 'spock';
-export const moves: Move[] = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
+export const moves: Move[] = ['scissors', 'spock', 'paper', 'lizard', 'rock'];
 
 const winningMoves: { [key: string]: string[] } = {
     rock: ['scissors', 'lizard'],
