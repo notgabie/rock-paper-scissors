@@ -35,9 +35,9 @@ button {
 		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='329' height='313'%3E%3Cpath fill='none' stroke='%23000' stroke-width='15' d='M164.5 9.27L9.26 122.06l59.296 182.495h191.888L319.74 122.06 164.5 9.271z' opacity='.2'/%3E%3C/svg%3E");
 		background-repeat: no-repeat no-repeat;
 		background-position: center center;
-		background-size: 80%;
-		grid-template-columns: 140px 40px 40px 140px;
-		grid-template-rows: 120px 130px 120px;
+        background-size: 65%;
+        column-gap: 1.3rem;
+        row-gap: 1rem;
 		grid-template-areas:
 			' . scissors scissors . '
 			' spock . . paper '
@@ -68,3 +68,4 @@ button {
         grid-area: rock;
         justify-self: start;
     }
+

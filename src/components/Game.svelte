@@ -50,9 +50,9 @@
 
 </script>
 
-<section>
+<section class="flex flex-col items-center space-y-4 p-4">
 	{#if step === 1}
-		<div class="w-full grid items-center" id="game-buttons">
+		<div class="grid items-center" id="game-buttons">
 			{#each moves as move}
 				<GameButton 
                 onClick={() => handleSelection(move)} 

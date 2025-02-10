@@ -56,12 +56,10 @@ class={cn(buttonVariants({ variant }), className )}
 onclick={onClick}
 onkeydown={onClick}
 >
-<div class="bg-white w-22 h-22 rounded-full flex items-center justify-center inset-shadow-[0_5px_0px_rgba(0,0,90,0.20)] rotate-180 transition-all hover:inset-shadow-[0_3px_0px_rgba(0,0,90,0.20)] text-black">
+<div class="inline-flex items-center bg-white w-20 h-20 rounded-full  justify-center inset-shadow-[0_5px_0px_rgba(0,0,90,0.20)] rotate-180 transition-all hover:inset-shadow-[0_3px_0px_rgba(0,0,90,0.20)] text-black">
+<div class="w-[60%] h-[60%] flex items-center justify-center">
 {@render children()}
+</div>
 </div>
 	
 </button>
-
-<style>
-
-</style>
